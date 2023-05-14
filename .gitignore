@@ -59,6 +59,7 @@ typings/
 .env
 .env.test
 .env.example
+.env.development
 
 # next.js build output
 .next
