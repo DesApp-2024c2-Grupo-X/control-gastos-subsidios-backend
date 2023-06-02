@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add seed commands here.
      *
@@ -14,6 +14,11 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('Rubros', [
+      {
+        nombre: 'Insumos',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
       {
         nombre: 'Bibliografía',
         createdAt: new Date(),
@@ -38,11 +43,11 @@ module.exports = {
         nombre: 'Servicios Técnicos y Gastos de Administración',
         createdAt: new Date(),
         updatedAt: new Date(),
-      }
+      },
     ]);
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
@@ -50,5 +55,5 @@ module.exports = {
      * await queryInterface.bulkDelete('Rubros', null, {});
      */
     await queryInterface.bulkDelete('Rubros', null, {});
-  }
+  },
 };
