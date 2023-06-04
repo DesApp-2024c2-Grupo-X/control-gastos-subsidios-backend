@@ -11,11 +11,11 @@ module.exports = {
         name: 'FK_SubsidiosAsignados_Rubros',
         references: {
           table: 'Rubros',
-          field: 'id',
+          field: 'id'
         },
-        onDelete: 'no action',
-        onUpdate: 'no action',
-      }),
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
     ]
  
   },
@@ -23,7 +23,7 @@ module.exports = {
   async down (queryInterface, Sequelize) {
 
     return [
-      queryInterface.removeConstraint('SubsidiosAsignados', 'FK_SubsidiosAsignados_Rubros'),
+      queryInterface.removeConstraint('SubsidiosAsignados', 'FK_SubsidiosAsignados_Rubros')
     ]
  
   }
