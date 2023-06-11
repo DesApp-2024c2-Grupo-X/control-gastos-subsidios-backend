@@ -2,8 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-
-    await queryInterface.bulkInsert('Convocatoria', [
+    await queryInterface.bulkInsert('Convocatorias', [
       {
         nombre: 'UNAH22-1',
         fechainicio: new Date('Mon Apr 12 2022'),
@@ -24,13 +23,11 @@ module.exports = {
         duracionmeses: 6,
         createdAt: new Date(),
         updatedAt: new Date(),
-      }
-  ]);
+      },
+    ]);
   },
 
   down: async (queryInterface, Sequelize) => {
-
-    await queryInterface.bulkDelete('Convocatoria', null, {});
-     
-  }
+    await queryInterface.bulkDelete('Convocatorias', null, {});
+  },
 };
