@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
@@ -12,7 +12,7 @@ module.exports = {
         type: 'foreign key',
         name: 'FK_SubsidiosAsignados_Proyecto',
         references: {
-          table: 'Proyecto',
+          table: 'Proyectos',
           field: 'id',
         },
         onDelete: 'CASCADE',
@@ -21,7 +21,7 @@ module.exports = {
     ];
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * await queryInterface.dropTable('users');
      */
@@ -31,5 +31,5 @@ module.exports = {
         'FK_SubsidiosAsignados_Proyecto'
       ),
     ];
-  }
+  },
 };
