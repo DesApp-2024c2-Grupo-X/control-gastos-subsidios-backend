@@ -14,8 +14,8 @@ module.exports = {
       fechainicio: {
         type: Sequelize.DATE,
       },
-      duracionmeses: {
-        type: Sequelize.INTEGER,
+      fechafin: {
+        type: Sequelize.DATE,
       },
       createdAt: {
         allowNull: false,
