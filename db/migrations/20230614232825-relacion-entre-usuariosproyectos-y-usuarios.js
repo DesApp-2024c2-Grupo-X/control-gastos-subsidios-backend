@@ -7,9 +7,9 @@ module.exports = {
       queryInterface.addConstraint('UsuariosProyectos', {
         fields: ['idUsuario'],
         type: 'foreign key',
-        name: 'FK_UsuariosProyectos_Usuarios',
+        name: 'FK_Usuarios_Proyectos_Usuarios',
         references: {
-          table: 'Usuario',
+          table: 'Usuarios',
           field: 'id',
         },
         onDelete: 'CASCADE',
