@@ -74,3 +74,4 @@ Machete_back.txt
 package-lock.json
 README.md
 .vscode/tasks.json
+/.env.development
