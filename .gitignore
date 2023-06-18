@@ -75,4 +75,4 @@ package-lock.json
 README.md
 
 .vscode/tasks.json
-.env.development
+/.env.development
