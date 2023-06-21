@@ -8,6 +8,10 @@ module.exports = {
      */
     await queryInterface.addColumn('Compras', 'idproveedor', {
       type: Sequelize.INTEGER,
+      references: {
+        model: 'Proveedores',
+        key: 'id'
+      }
     });
   },
 
@@ -15,6 +19,6 @@ module.exports = {
     /**
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.dropColumn('Compras', 'idproveedor');
+    await queryInterface.removeColumn('Compras', 'idproveedor');
   },
 };

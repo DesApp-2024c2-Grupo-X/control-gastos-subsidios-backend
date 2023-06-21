@@ -1,7 +1,7 @@
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
+  up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('SubsidiosAsignados', {
       id: {
         allowNull: false,
@@ -10,10 +10,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idProyecto: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Proyectos',
+          key: 'id'
+        }
       },
       idRubro: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Rubros',
+          key: 'id'
+        }
       },
       montoAsignado: {
         type: Sequelize.FLOAT
@@ -28,7 +36,7 @@ module.exports = {
       }
     });
   },
-  async down(queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('SubsidiosAsignados');
   }
 };
