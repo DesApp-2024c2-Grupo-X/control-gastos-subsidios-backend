@@ -2,19 +2,23 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
+  up: async (queryInterface, Sequelize) => {
     /**
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
     await queryInterface.addColumn('Proyectos', 'idconvocatoria', {
       type: Sequelize.INTEGER,
+      references: {
+        model: 'Convocatorias',
+        key: 'id'
+      }
     });
   },
 
-  async down(queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     /**
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.dropColumn('Proyectos', 'idconvocatoria');
+    await queryInterface.removeColumn('Proyectos', 'idconvocatoria');
   },
 };

@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  up: async (queryInterface, Sequelize) => {
     /**
      * Add seed commands here.
      *
@@ -14,45 +14,58 @@ module.exports = {
     */
     await queryInterface.bulkInsert('SubsidiosAsignados', [
       {
-         idProyecto: 1,
-         idRubro: 2,
-         montoAsignado: 10500.00,
-         createdAt: new Date(),
-        updatedAt: new Date(),
-       },
-       {
+        id: 1,
         idProyecto: 1,
-        idRubro: 3,
+        idRubro: 1,
+        montoAsignado: 10500.00,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 2,
+        idProyecto: 1,
+        idRubro: 2,
         montoAsignado: 14500.00,
         createdAt: new Date(),
-       updatedAt: new Date(),
+        updatedAt: new Date(),
       },
       {
+        id: 3,
         idProyecto: 1,
-        idRubro: 4,
+        idRubro: 3,
         montoAsignado: 8400.00,
         createdAt: new Date(),
-       updatedAt: new Date(),
+        updatedAt: new Date(),
       },
       {
+        id: 4,
+        idProyecto: 1,
+        idRubro: 4,
+        montoAsignado: 12400.00,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 5,
         idProyecto: 1,
         idRubro: 5,
-        montoAsignado: 228400.00,
+        montoAsignado: 150000.00,
         createdAt: new Date(),
-       updatedAt: new Date(),
+        updatedAt: new Date(),
       },
       {
+        id: 6,
         idProyecto: 1,
         idRubro: 6,
-        montoAsignado: 15000.00,
+        montoAsignado: 90000.00,
         createdAt: new Date(),
-       updatedAt: new Date(),
+        updatedAt: new Date(),
       }
-      ],
+    ],
     );
   },
 
-  async down (queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     /**
      * Add commands to revert seed here.
      *

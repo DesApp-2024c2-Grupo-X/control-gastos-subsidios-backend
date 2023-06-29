@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  up: async (queryInterface, Sequelize) => {
     /**
      * Add altering commands here.
      *
@@ -11,16 +11,20 @@ module.exports = {
      */
     await queryInterface.addColumn('Compras', 'idsubsidio', {
       type: Sequelize.INTEGER,
+      references: {
+        model: 'SubsidiosAsignados',
+        key: 'id'
+      }
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     /**
      * Add reverting commands here.
      *
      * Example:
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.dropColumn('Compras', 'idsubsidio');
+    await queryInterface.removeColumn('Compras', 'idsubsidio');
   }
 };

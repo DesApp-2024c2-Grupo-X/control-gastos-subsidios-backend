@@ -12,9 +12,6 @@ module.exports = {
       nombre: {
         type: Sequelize.STRING,
       },
-      rubro: {
-        type: Sequelize.STRING,
-      },
       telefono: {
         type: Sequelize.STRING,
       },

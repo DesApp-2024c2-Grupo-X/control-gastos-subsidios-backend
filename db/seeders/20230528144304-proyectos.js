@@ -15,6 +15,7 @@ module.exports = {
     // seeders proyectos
     await queryInterface.bulkInsert('Proyectos', [
       {
+        id: 1,
         titulo: 'Proyecto 1',
         tipo: 'Investigación',
         organismo: 'UNLP',
@@ -35,6 +36,7 @@ module.exports = {
         resumen: 'Resumen 1',
         createdAt: new Date(),
         updatedAt: new Date(),
+        idconvocatoria: 2,
       },
     ]);
   },
