@@ -73,5 +73,5 @@ Machete_back.txt
 # JRobledo
 package-lock.json
 README.md
-
 .vscode/tasks.json
+/.env.development
