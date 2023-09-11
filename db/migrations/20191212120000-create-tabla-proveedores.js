@@ -1,34 +1,24 @@
 'use strict';
+// modulo compras migracion
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Usuarios', {
+    await queryInterface.createTable('Proveedores', {
       id: {
-        primaryKey: true,
         allowNull: false,
         autoIncrement: true,
+        primaryKey: true,
         type: Sequelize.INTEGER,
       },
       nombre: {
         type: Sequelize.STRING,
       },
-      usuario: {
-        //primaryKey: true,
-        allowNull: false,
+      telefono: {
         type: Sequelize.STRING,
       },
-      apellido: {
+      mail: {
         type: Sequelize.STRING,
       },
-      contraseña: {
-        type: Sequelize.STRING,
-      },
-      fechaNacimiento: {
-        type: Sequelize.DATEONLY,
-      },
-      avatarUrl: {
-        type: Sequelize.STRING,
-      },
-      rol: {
+      cuit: {
         type: Sequelize.STRING,
       },
       createdAt: {
@@ -42,6 +32,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Usuarios');
+    await queryInterface.dropTable('Proveedores');
   },
 };
