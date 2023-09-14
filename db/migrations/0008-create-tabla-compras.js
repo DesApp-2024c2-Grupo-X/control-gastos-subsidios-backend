@@ -12,17 +12,8 @@ module.exports = {
       fecha: {
         type: Sequelize.DATE,
       },
-      rubro: {
-        type: Sequelize.STRING,
-      },
-      subrubro: {
-        type: Sequelize.STRING,
-      },
       numeroCompra: {
         type: Sequelize.INTEGER,
-      },
-      proveedor: {
-        type: Sequelize.STRING,
       },
       monto: {
         type: Sequelize.DECIMAL(20, 2),
@@ -35,6 +26,20 @@ module.exports = {
       },
       nombre: {
         type: Sequelize.STRING,
+      },
+      idSubsidio: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'SubsidiosAsignados',
+          key: 'id',
+        },
+      },
+      idProveedor: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Proveedores',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,

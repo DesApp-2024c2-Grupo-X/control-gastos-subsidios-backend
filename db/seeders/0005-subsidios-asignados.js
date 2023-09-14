@@ -11,29 +11,29 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
+     */
     await queryInterface.bulkInsert('SubsidiosAsignados', [
       {
         id: 1,
         idProyecto: 1,
         idRubro: 1,
-        montoAsignado: 10500.00,
+        montoAsignado: 10500.0,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 2,
-        idProyecto: 1,
+        idProyecto: 2,
         idRubro: 2,
-        montoAsignado: 14500.00,
+        montoAsignado: 14500.0,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 3,
-        idProyecto: 1,
+        idProyecto: 3,
         idRubro: 3,
-        montoAsignado: 8400.00,
+        montoAsignado: 8400.0,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -41,28 +41,27 @@ module.exports = {
         id: 4,
         idProyecto: 1,
         idRubro: 4,
-        montoAsignado: 12400.00,
+        montoAsignado: 12400.0,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 5,
-        idProyecto: 1,
+        idProyecto: 2,
         idRubro: 5,
-        montoAsignado: 150000.00,
+        montoAsignado: 150000.0,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 6,
-        idProyecto: 1,
+        idProyecto: 3,
         idRubro: 6,
-        montoAsignado: 90000.00,
+        montoAsignado: 90000.0,
         createdAt: new Date(),
         updatedAt: new Date(),
-      }
-    ],
-    );
+      },
+    ]);
   },
 
   down: async (queryInterface, Sequelize) => {
@@ -73,5 +72,5 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
     await queryInterface.bulkDelete('SubsidiosAsignados', null, {});
-  }
+  },
 };

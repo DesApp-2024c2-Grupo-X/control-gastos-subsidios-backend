@@ -5,7 +5,7 @@ module.exports = {
     await queryInterface.bulkInsert('Convocatorias', [
       {
         id: 1,
-        nombre: 'UNAH22-1',
+        nombre: 'UNAH23-1',
         fechainicio: new Date('Mon Apr 12 2022'),
         fechafin: new Date(),
         createdAt: new Date(),
@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         id: 2,
-        nombre: 'UNAH22-2',
+        nombre: 'UNAH23-2',
         fechainicio: new Date('Mon Nov 07 2022'),
         fechafin: new Date(),
         createdAt: new Date(),
@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         id: 3,
-        nombre: 'UNAH23-Marzo',
+        nombre: 'UNAH23-3',
         fechainicio: new Date('Mon Mar 20 2023'),
         fechafin: new Date(),
         createdAt: new Date(),

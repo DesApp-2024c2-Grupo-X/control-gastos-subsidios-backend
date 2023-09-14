@@ -12,11 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       usuario: {
-        //primaryKey: true,
         allowNull: false,
-        type: Sequelize.STRING,
-      },
-      apellido: {
         type: Sequelize.STRING,
       },
       contraseña: {
@@ -24,6 +20,9 @@ module.exports = {
       },
       fechaNacimiento: {
         type: Sequelize.DATEONLY,
+      },
+      apellido: {
+        type: Sequelize.STRING,
       },
       avatarUrl: {
         type: Sequelize.STRING,

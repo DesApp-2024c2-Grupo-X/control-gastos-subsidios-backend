@@ -30,9 +30,6 @@ module.exports = {
       areaTematica: {
         type: Sequelize.STRING,
       },
-      subsidio: {
-        type: Sequelize.STRING,
-      },
       fechaInicio: {
         type: Sequelize.DATE,
       },
@@ -57,11 +54,15 @@ module.exports = {
       codirector: {
         type: Sequelize.STRING,
       },
-      usuario: {
-        type: Sequelize.STRING,
-      },
       resumen: {
         type: Sequelize.STRING,
+      },
+      idConvocatoria: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Convocatorias',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,
