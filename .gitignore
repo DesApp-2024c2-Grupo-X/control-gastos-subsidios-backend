@@ -57,9 +57,21 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
+.env.example
+.env.development
 
 # next.js build output
 .next
 
 # Docker
 docker/postgres/data
+
+# JRobledo
+Machete_back.txt
+
+# JRobledo
+package-lock.json
+README.md
+.vscode/tasks.json
+/.env.development
