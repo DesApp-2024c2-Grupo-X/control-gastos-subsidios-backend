@@ -13,14 +13,14 @@ module.exports = {
       {
         id: 2,
         idUsuario: 2,
-        idProyecto: 1,
+        idProyecto: 2,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 3,
         idUsuario: 3,
-        idProyecto: 1,
+        idProyecto: 3,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
