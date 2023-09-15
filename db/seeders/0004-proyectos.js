@@ -15,7 +15,6 @@ module.exports = {
     // seeders proyectos
     await queryInterface.bulkInsert('Proyectos', [
       {
-        id: 1,
         titulo: 'Proyecto 1',
         tipo: 'Investigación',
         organismo: 'UNLP',
@@ -37,7 +36,6 @@ module.exports = {
         idConvocatoria: 1,
       },
       {
-        id: 2,
         titulo: 'Proyecto 2',
         tipo: 'Investigación 2',
         organismo: 'UNLP',
@@ -59,7 +57,6 @@ module.exports = {
         idConvocatoria: 2,
       },
       {
-        id: 3,
         titulo: 'Proyecto 3',
         tipo: 'Investigación 3',
         organismo: 'UNLP',

@@ -4,7 +4,6 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('Proveedores', [
       {
-        id: 1,
         nombre: 'Libreria Pipo',
         telefono: '4308-6106',
         mail: 'lib.pipo@gmail.com',
@@ -13,7 +12,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 2,
         nombre: 'Turismocity',
         telefono: '0810-810-9994',
         mail: 'subscription@alertas.turismocity.com',
@@ -22,7 +20,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 3,
         nombre: 'Fravega',
         telefono: '0810-888-7110',
         mail: 'atencion@fravega.com',
@@ -31,7 +28,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 4,
         nombre: 'Exo Argentina',
         telefono: '(+5411) 4006-9149',
         mail: 'exo@ecomms.exo.com',
@@ -40,7 +36,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 5,
         nombre: 'Libreria Mayorista S.A.',
         telefono: '4308-6106',
         mail: 'casapaso3@gmail.com',
@@ -49,7 +44,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 6,
         nombre: 'Despegar',
         telefono: '0810-810-9994',
         mail: 'subscription@alertas.despegar.com',
@@ -58,7 +52,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 7,
         nombre: 'Garbarino',
         telefono: '0810-888-7110',
         mail: 'atencion@garbarino.com',
@@ -67,7 +60,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 8,
         nombre: 'Lenovo Argentina',
         telefono: '(+5411) 4006-9149',
         mail: 'lenovo@ecomms.lenovo.com',

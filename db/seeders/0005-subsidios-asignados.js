@@ -14,7 +14,6 @@ module.exports = {
      */
     await queryInterface.bulkInsert('SubsidiosAsignados', [
       {
-        id: 1,
         idProyecto: 1,
         idRubro: 1,
         montoAsignado: 10500.0,
@@ -22,7 +21,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 2,
         idProyecto: 2,
         idRubro: 2,
         montoAsignado: 14500.0,
@@ -30,7 +28,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 3,
         idProyecto: 3,
         idRubro: 3,
         montoAsignado: 8400.0,
@@ -38,7 +35,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 4,
         idProyecto: 1,
         idRubro: 4,
         montoAsignado: 12400.0,
@@ -46,7 +42,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 5,
         idProyecto: 2,
         idRubro: 5,
         montoAsignado: 150000.0,
@@ -54,7 +49,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        id: 6,
         idProyecto: 3,
         idRubro: 6,
         montoAsignado: 90000.0,
