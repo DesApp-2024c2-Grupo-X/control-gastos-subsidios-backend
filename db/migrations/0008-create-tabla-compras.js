@@ -41,6 +41,9 @@ module.exports = {
           key: 'id',
         },
       },
+      subRubro: {
+        type: Sequelize.STRING,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
