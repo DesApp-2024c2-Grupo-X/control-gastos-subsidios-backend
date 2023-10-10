@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 2,
         monto: 23,
         estado: 'Pendiente',
         factura: '1',
@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 3,
         monto: 23,
         estado: 'Pendiente',
         factura: '1',
@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 4,
         monto: 23,
         estado: 'Pendiente',
         factura: '1',
@@ -57,7 +57,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 5,
         monto: 23,
         estado: 'Aprobado',
         factura: '1',
@@ -70,7 +70,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 6,
         monto: 23,
         estado: 'Aprobado',
         factura: '1',
@@ -83,7 +83,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 7,
         monto: 23,
         estado: 'Aprobado',
         factura: '1',
@@ -96,7 +96,7 @@ module.exports = {
       },
       {
         fecha: new Date(),
-        numeroCompra: 1,
+        numeroCompra: 8,
         monto: 23,
         estado: 'Aprobado',
         factura: '1',
