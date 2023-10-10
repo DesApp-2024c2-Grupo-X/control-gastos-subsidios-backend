@@ -31,10 +31,10 @@ module.exports = {
         type: Sequelize.STRING,
       },
       fechaInicio: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
       },
       fechaFin: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
       },
       fechaInicioGastos: {
         type: Sequelize.STRING,
