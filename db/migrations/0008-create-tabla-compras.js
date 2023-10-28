@@ -27,6 +27,9 @@ module.exports = {
       nombre: {
         type: Sequelize.STRING,
       },
+      cae: {
+        type: Sequelize.INTEGER,
+      },
       idSubsidio: {
         type: Sequelize.INTEGER,
         references: {
