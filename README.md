@@ -65,7 +65,8 @@ Una ves instalado npm ubicate en el proyecto y ya puedes instalar las dependecia
 
 # Descargar e instalar el motor de base de datos postgres y herramienta de gestion de base de datos
 
-Se debe instalar el motor de base y gestor. Como motor usamos postgres y como herramienta de gestion recomendamos pgAdmin
+Se debe instalar el motor de base y gestor.
+Como motor usamos postgres y como herramienta de gestion recomendamos pgAdmin
 Para ello dejamos un link donde puedes descargar ambos de un mismo lugar.
 Link de Postgres y pgAmdin : https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
@@ -73,7 +74,7 @@ En caso de no funcionar puede descargar el motor de base de dedatos postgres por
 
 # Pasos extra
 
-En el repositorio tendras el archivo .env.development que apunta al nombre de tu base de datos.
+En el repositorio tendras el archivo .env.development que deberas modificar con los datos de tu base de datos.
 La cual tendras que crear en tu base, para esto puede usar pgAdmin y crear una base con el nombre que le indiques en este archivo.
 Una ves echo este paso puedes migrar la base y los seeder.
 
@@ -82,3 +83,26 @@ Una ves echo este paso puedes migrar la base y los seeder.
 Dejamos un link con la coleccion y sus metodos funcionales en local host:
 
 https://app.getpostman.com/join-team?invite_code=b41ed2c4593d46cd8a8ff446253ae922
+
+# Como subir el proyecto a la nube
+
+Para esto debes seguir ciertos pasos; en primer lugar elegir una plataforma en la nube para deployar tanto el back-end como le front-end, en nuestro caso dejaremos un ejemplo con la plataforma de railway; dejamos el link de la pag oficial "https://railway.app/".
+
+Para ello deberas seguir los pasos para create una cuenta una vez echo esto podras crear maquinas virtuales
+
+# Deployando el back en la nube.
+
+Para ellos deberas apuntar el ropositorio del mismo y configurar las variables de entorno con tu servidor posgrest el cual tambien deberas configurar en la pagina.
+
+# Variables de entorno de railway
+
+Use este codigo en raw editor para editar las variables de entorno.
+
+NODE_ENV= "nombre de entorno"
+SQL_HOST="url del host"
+SQL_DATABASE="nombre de la base de datos"
+SQL_PORT="Puerto de la base de datos"
+SQL_PASSWORD=""Contraseña de la base de datos""
+SQL_USERNAME="Usuario de la base de datos"
+
+Guarde el archivo y visualizara la variables de entorno en UI.
