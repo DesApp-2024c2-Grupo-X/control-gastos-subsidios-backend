@@ -56,14 +56,10 @@ Una vez instalado npm podrás ubicarte en el proyecto e instalar las dependencia
 
 #### Para descargar e instalar el proyecto del lado Front-End localmente se deben seguir los siguientes pasos.
 
-1. Clonar o descargar el repositorio
+Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone https://github.com/unahur-desapp/control-gastos-subsidios-frontend.git .
 
-Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone "url del repositorio"
-Si eliges descargarlo solo debes ingresar al link.
-
-Link front-end: "https://github.com/unahur-desapp/control-gastos-subsidios-backend".
-
-2. Correr los comandos para instalación y disponer del proyecto.
+Si eliges descargarlo solo debes ingresar al link del repositorio:
+[Front-end](https://github.com/unahur-desapp/control-gastos-subsidios-frontend).
 
 Una vez descargado o clonado el proyecto debemos abrir una terminal, situarnos donde descargamos o clonamos el proyecto.
 Ej: "C:\Users\Windows\Proyecto\control-gastos-subsidios-frontend".
@@ -78,41 +74,62 @@ Esto dejará corriendo el proyecto mientras no cierres la terminal, recuerda que
 
 1. Clonar o descargar el repositorio
 
-Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone "url del repositorio"
-Si eliges descargarlo solo debes ingresar al link.
+Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone "https://github.com/unahur-desapp/control-gastos-subsidios-backend.git"
 
-Link front-back-end: "https://github.com/unahur-desapp/control-gastos-subsidios-backend".
+Si eliges descargarlo solo debes ingresar al link del repositorio:
+[Back-end](https://github.com/unahur-desapp/control-gastos-subsidios-backend).
 
-2. Correr los comandos para instalación y disponer del proyecto.
+2. Descargar e instalar el motor de base de datos postgres
 
-Una vez descargado o clonado el proyecto debemos abrir una terminal, situarnos donde descargamos o clonamos el proyecto.
-Ej: "C:\Users\Windows\Proyecto\control-gastos-subsidios-backend".
-Ejecutar la orden npm -i (para instalar las dependencias).
-Después de terminar la instalación de las mismas ejecutar npm start para correr el proyecto localmente. El mismo quedará corriendo en la url “localhost” puerto 3001.
-Esto dejará corriendo la base de datos mientras no cierres la terminal, responderá a las consultas del front-end.
+Se debe instalar el motor de base datos y de preferencia un gestor para administrar la misma. Como motor se debe instalar postgres y como herramienta de gestor recomendamos pgAdmin.
+Para ello dejamos un link donde puedes descargar ambos de un mismo lugar: [Postgres y pgAdmin](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 
-//////////////////////////////////// HASTA ACA MIRE 08/11 01:37 min lucho //////////////////////////////////
+En caso de no funcionar el link se puede descargar el motor de base de datos postgres por algún otro link y pgAdmin de su página oficial.
 
-## Descargar e instalar el motor de base de datos postgres y herramienta de gestión de base de datos
+3. Configurar base de datos
 
-Se debe instalar el motor de base y gestor.
-Como motor usamos postgres y como herramienta de gestión recomendamos pgAdmin
-Para ello dejamos un link donde puedes descargar ambos de un mismo lugar.
-Link de Postgres y pgAmdin : https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+Si utilizas la herramienta pgAdmin y el link provisto una vez instalado deberás configurar un servidor. Ejecuta el pgAdmin y el mismo te va a invitar a configurar un servidor nuevo, si no es asi click secundario en Servers y registrar uno nuevo.
 
-En caso de no funcionar puede descargar el motor de base de datos postgres por algun otro link y pgAdmin de su página oficial.
+- En la sección `General` debes poner un nombre en el campo `name`.
+- En la sección `Connection` configura el `Host name` = `localhost` y el `Port` = `5432` , ponle un `usuario` = `postgres` y una `contraseña` = `admin` las mismas las usaran el back para comunicarse con la base. Al finalizar click en `Save`.
 
-# Pasos extra
+4. Modificar las variables de entorno
 
-En el repositorio tendras el archivo .env.development que deberas modificar con los datos de tu base de datos.
-La cual tendras que crear en tu base, para esto puede usar pgAdmin y crear una base con el nombre que le indiques en este archivo.
-Una ves echo este paso puedes migrar la base y los seeder.
+En el repositorio clonado anteriormente verás un archivo con nombre `.env.development` que deberás modificar con los datos de tu base de datos. La cual creamos en el paso anterior. Te dejamos un ejemplo de cómo se debería ver el archivo.
 
-# Colleccion de postman:
+```
+SQL_USERNAME=postgres
+SQL_PASSWORD=admin
+SQL_DATABASE=ControlGastosSubsidiosGrupo4
+SQL_HOST=localhost
+SQL_PORT=5432
+SQL_TEST_DATABASE=ControlGastosSubsidiosGrupo4
+```
 
-Dejamos un link con la coleccion y sus metodos funcionales en local host:
+En este archivo se encuentran las variables que va a usar la aplicación para comunicarse con la base de datos.
 
-https://app.getpostman.com/join-team?invite_code=b41ed2c4593d46cd8a8ff446253ae922
+5. Instalación de dependencias
+
+Abrir una terminal, situarnos donde descargamos o clonamos el proyecto. Ej: "C:\Users\Windows\Proyecto\control-gastos-subsidios-backend".
+Ejecutamos el comando `npm -i` (para instalar las dependencias).
+Esperar la instalación de las mismas.
+
+6. Migración de la base
+
+Podemos abrir una terminal o usar la misma que en el punto anterior, lo que necesitamos es situarnos donde descargamos o clonamos el proyecto. Para migrar la base si configuramos todo bien solo debemos utilizar el comando `npm run db:init` para crear la base y `npm run db:seed` para cargar un set de datos.
+
+7. Arrancar el proyecto
+
+Para ello situados en el proyecto ejecutar `npm start` para correr el proyecto localmente. El mismo quedará corriendo en la url “localhost” puerto 3001.
+Esto dejará corriendo la base de datos mientras no cierres la terminal, responderá a las consultas del front-end.ase de datos mientras no cierres la terminal, responderá a las consultas del front-end.
+
+## Colección / Colleccion
+
+Dejamos un link con la colección y sus métodos funcionales en localhost, la misma fue generada y extraída en Postman que es una aplicación que nos permite testear APIs a través de una interfaz gráfica de usuario.
+
+https://app.getpostman.com/join-team?invite_code=b41ed2c4593d46cd8a8ff446253ae922 (ESTE LINK NO ANDA VER QUE ONDA PASAR A CURL O HTTP VER)
+
+//////////////////////////////////// HASTA ACA LLEGUE 08/11 03:00 a.m. //////////////////////////////////
 
 # Como subir el proyecto a la nube
 
