@@ -4,13 +4,11 @@
 
 Comúnmente los proyectos de desarrollo de aplicaciones tienen dos partes básicas: Front-end
 (lado del cliente) y Back-end (lado del servidor), que se combinan en el desarrollo de Full-stack.
-En este proyecto se decidió utilizar el Stack PERN, el cual consiste en PostgreSQL, ExpressJS,
-ReactJS y NodeJS, tecnologías populares en el desarrollo Full-stack.
+En este proyecto se decidió utilizar el stack `PERN`, el cual consiste en PostgreSQL, ExpressJS, ReactJS y NodeJS, tecnologías populares en el desarrollo Full-stack.
 
 ## PostgreSQL
 
-Es un motor de base de datos de código abierto poderoso, muy popular en la actualidad. Pero
-más allá de eso, la principal razón por la cual se escogió este motor es porque el SIU Pilagá
+Es un motor de base de datos de código abierto poderoso, muy popular en la actualidad. Más allá de eso, la principal razón por la cual se escogió este motor es porque el SIU Pilagá
 (Módulo económico, presupuestario, financiero y contable, hermano del SIU Guaraní) utiliza
 PostgreSQL. Una de las mejoras importantes que se planteó para el futuro en conversaciones
 con el usuario, sería el conectar este proyecto con el servicio de Pilagá. Así que se consideró
@@ -27,7 +25,7 @@ tecnologías presentadas.
 
 React es una biblioteca para construir interfaces de usuario, ReactJS es una de las librerías más populares de JavaScript para el desarrollo de aplicaciones móviles y web, la cual contiene una colección de fragmentos de código JavaScript reutilizables utilizados para crear interfaces de usuario (UI) llamadas componentes.
 Es importante señalar que ReactJS no es un framework de JavaScript.
-React propone una arquitectura basada en componentes, que son piezas de código en las que se utiliza HTML, CSS y Javascript, de modo que contienen tanto la lógica como la presentación.
+Propone una arquitectura basada en componentes, que son piezas de código en las que se utiliza HTML, CSS y Javascript, de modo que contienen tanto la lógica como la presentación.
 Se consideró usar el mismo ya que todo el equipo tenía gran conocimiento sobre esta biblioteca y su amplio soporte online.
 
 ## NodeJS
@@ -41,87 +39,96 @@ Fue escogida por su amplio soporte online en caso de dificultades.
 
 ## GitHub
 
-Para descargar el proyecto deberás contar con github instalado, el cual es un sistema de control de versiones distribuido que te ayuda a realizar un seguimiento de los cambios en tu código fuente y permite una colaboración fluida entre desarrolladores. Si no sabes lo que es te dejamos un link.
-Link de github: https://docs.github.com/es/get-started
+Para descargar el proyecto deberás contar con github instalado, el cual es un sistema de control de versiones distribuido que te ayuda a realizar un seguimiento de los cambios en tu código fuente y permite una colaboración fluida entre desarrolladores. Si no sabes lo que es te dejamos un link:
+[Github Started](https://docs.github.com/es/get-started)
 
 ## Descargar e instalar NodeJS
 
 Para publicar e instalar paquetes hacia y desde el registro público de npm o un registro privado de npm, debe instalar Node.js y la interfaz de línea de comandos de npm utilizando un administrador de versiones de Node o un instalador de Node.
 
-Link de descargar NodeJS: https://nodejs.org/en/download .
-
-Una vez instalado npm podrás ubicarte en el proyecto e instalar las dependencias.
+Link de descarga: [NodeJS - NPM](https://nodejs.org/en/download) .
 
 ## Front-end (Local)
 
 #### Para descargar e instalar el proyecto del lado Front-End localmente se deben seguir los siguientes pasos.
 
-Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone https://github.com/unahur-desapp/control-gastos-subsidios-frontend.git .
+**1. Clonar o descargar el repositorio**
+
+Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando `git clone https://github.com/unahur-desapp/control-gastos-subsidios-frontend.git` .
 
 Si eliges descargarlo solo debes ingresar al link del repositorio:
 [Front-end](https://github.com/unahur-desapp/control-gastos-subsidios-frontend).
 
+**2. Instalación de dependencias**
+
 Una vez descargado o clonado el proyecto debemos abrir una terminal, situarnos donde descargamos o clonamos el proyecto.
 Ej: "C:\Users\Windows\Proyecto\control-gastos-subsidios-frontend".
-Ejecutar el comando npm -i (para instalar las dependencias).
-Después de terminar la instalación de las mismas ejecutar npm start para correr el proyecto localmente.
-El mismo quedará corriendo en la url “localhost” puerto 3000.
+
+Ejecutar el comando `npm i` o `npm install` (para instalar las dependencias).
+Después de terminar la instalación de las mismas ejecutar `npm start` para correr el proyecto localmente.
+El mismo quedará corriendo en la url _“localhost:3000”_.
 Esto dejará corriendo el proyecto mientras no cierres la terminal, recuerda que hasta que no instales y corras el backend nadie responderá tus consultas y por ende no podrás logearte.
 
 # Back-end (Local)
 
 #### Para descargar e instalar el proyecto del lado Back-End localmente se deben seguir los siguientes pasos.
 
-1. Clonar o descargar el repositorio
+**1. Clonar o descargar el repositorio**
 
-Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando git clone "https://github.com/unahur-desapp/control-gastos-subsidios-backend.git"
+Si eliges clonar el repositorio lo puedes hacer desde una terminal con el comando `git clone https://github.com/unahur-desapp/control-gastos-subsidios-backend.git`
 
 Si eliges descargarlo solo debes ingresar al link del repositorio:
 [Back-end](https://github.com/unahur-desapp/control-gastos-subsidios-backend).
 
-2. Descargar e instalar el motor de base de datos postgres
+**2. Descargar e instalar el motor de base de datos postgres**
 
 Se debe instalar el motor de base datos y de preferencia un gestor para administrar la misma. Como motor se debe instalar postgres y como herramienta de gestor recomendamos pgAdmin.
 Para ello dejamos un link donde puedes descargar ambos de un mismo lugar: [Postgres y pgAdmin](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 
 En caso de no funcionar el link se puede descargar el motor de base de datos postgres por algún otro link y pgAdmin de su página oficial.
 
-3. Configurar base de datos
+**3. Configurar base de datos**
 
-Si utilizas la herramienta pgAdmin y el link provisto una vez instalado deberás configurar un servidor. Ejecuta el pgAdmin y el mismo te va a invitar a configurar un servidor nuevo, si no es asi click secundario en Servers y registrar uno nuevo.
+Si utilizas la herramienta pgAdmin, una vez instalado deberás configurar un servidor. Ejecuta el pgAdmin y el mismo te va a invitar a configurar un servidor nuevo, si no es asi puedes hacer click secundario que abrira un desplegable -> Servers -> Register -> Server.
 
 - En la sección `General` debes poner un nombre en el campo `name`.
-- En la sección `Connection` configura el `Host name` = `localhost` y el `Port` = `5432` , ponle un `usuario` = `postgres` y una `contraseña` = `admin` las mismas las usaran el back para comunicarse con la base. Al finalizar click en `Save`.
+- En la sección `Connection` configura el `Host name` = `localhost` y el `Port` = `5432` , ponle un `usuario` = `postgres` y una `contraseña` = `admin`; El usuario y la contraseña mas adelante seran utilizadas por el back-end para comunicarse con la base.
+- Al finalizar click en `Save`.
 
-4. Modificar las variables de entorno
+Tambien debemos crear una base de datos. En el servidor creado debes hacer click secundario que abrira un desplegable -> Create -> DataBase
 
-En el repositorio clonado anteriormente verás un archivo con nombre `.env.development` que deberás modificar con los datos de tu base de datos. La cual creamos en el paso anterior. Te dejamos un ejemplo de cómo se debería ver el archivo.
+- En la sección `General` solo debes poner un nombre en el campo `database`.
+- Al finalizar click en `Save`.
+
+**4. Modificar las variables de entorno**
+
+En el repositorio clonado anteriormente verás un archivo con nombre `.env.development` si existe debes crearlo, el mismo lo deberás modificar con los datos de tu base. La cual creamos en el paso anterior. Te dejamos un ejemplo de cómo se debería ver el archivo.
 
 ```
 SQL_USERNAME=postgres
 SQL_PASSWORD=admin
-SQL_DATABASE=ControlGastosSubsidiosGrupo4
+SQL_DATABASE=nombreDeTuBase
 SQL_HOST=localhost
 SQL_PORT=5432
-SQL_TEST_DATABASE=ControlGastosSubsidiosGrupo4
+SQL_TEST_DATABASE=nombreDeTuBaseDeTest
 ```
 
 En este archivo se encuentran las variables que va a usar la aplicación para comunicarse con la base de datos.
 
-5. Instalación de dependencias
+**5. Instalación de dependencias**
 
 Abrir una terminal, situarnos donde descargamos o clonamos el proyecto. Ej: "C:\Users\Windows\Proyecto\control-gastos-subsidios-backend".
-Ejecutamos el comando `npm -i` (para instalar las dependencias).
+Ejecutamos el comando `npm i` o `npm install` (para instalar las dependencias).
 Esperar la instalación de las mismas.
 
-6. Migración de la base
+**6. Migración de la base**
 
 Podemos abrir una terminal o usar la misma que en el punto anterior, lo que necesitamos es situarnos donde descargamos o clonamos el proyecto. Para migrar la base si configuramos todo bien solo debemos utilizar el comando `npm run db:init` para crear la base y `npm run db:seed` para cargar un set de datos.
 
-7. Arrancar el proyecto
+**7. Arrancar el proyecto**
 
-Para ello situados en el proyecto ejecutar `npm start` para correr el proyecto localmente. El mismo quedará corriendo en la url “localhost” puerto 3001.
-Esto dejará corriendo la base de datos mientras no cierres la terminal, responderá a las consultas del front-end.ase de datos mientras no cierres la terminal, responderá a las consultas del front-end.
+Para ello situados en el proyecto ejecutar el comando `npm start` para correr el proyecto localmente. El mismo quedará corriendo en la url _“localhost:3001”_.
+Esto dejará corriendo la base de datos mientras no cierres la terminal; la cual responderá a las consultas del front-end.
 
 ## Colección / Colleccion
 
@@ -129,7 +136,7 @@ Dejamos un link con la colección y sus métodos funcionales en localhost, la mi
 
 https://app.getpostman.com/join-team?invite_code=b41ed2c4593d46cd8a8ff446253ae922 (ESTE LINK NO ANDA VER QUE ONDA PASAR A CURL O HTTP VER)
 
-//////////////////////////////////// HASTA ACA LLEGUE 08/11 03:00 a.m. //////////////////////////////////
+//////////////////////////////////// HASTA ACA LLEGUE//////////////////////////////////
 
 # Como subir el proyecto a la nube
 
