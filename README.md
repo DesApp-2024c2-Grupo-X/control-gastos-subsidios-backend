@@ -134,29 +134,4 @@ Esto dejará corriendo la base de datos mientras no cierres la terminal; la cual
 
 Dejamos un link con la colección y sus métodos funcionales en localhost, la misma fue generada y extraída en Postman que es una aplicación que nos permite testear APIs a través de una interfaz gráfica de usuario.
 
-https://app.getpostman.com/join-team?invite_code=b41ed2c4593d46cd8a8ff446253ae922 (ESTE LINK NO ANDA VER QUE ONDA PASAR A CURL O HTTP VER)
-
-//////////////////////////////////// HASTA ACA LLEGUE//////////////////////////////////
-
-# Como subir el proyecto a la nube
-
-Para esto debes seguir ciertos pasos; en primer lugar elegir una plataforma en la nube para deployar tanto el back-end como le front-end, en nuestro caso dejaremos un ejemplo con la plataforma de railway; dejamos el link de la pag oficial "https://railway.app/".
-
-Para ello deberas seguir los pasos para create una cuenta una vez echo esto podras crear maquinas virtuales
-
-# Deployando el back en la nube.
-
-Para ellos deberas apuntar el ropositorio del mismo y configurar las variables de entorno con tu servidor posgrest el cual tambien deberas configurar en la pagina.
-
-# Variables de entorno de railway
-
-Use este codigo en raw editor para editar las variables de entorno.
-
-NODE_ENV= "nombre de entorno"
-SQL_HOST="url del host"
-SQL_DATABASE="nombre de la base de datos"
-SQL_PORT="Puerto de la base de datos"
-SQL_PASSWORD=""Contraseña de la base de datos""
-SQL_USERNAME="Usuario de la base de datos"
-
-Guarde el archivo y visualizara la variables de entorno en UI.
+[Colección / Colleccion](https://api.postman.com/collections/23966358-8480fbe9-da46-4fb9-89ea-c9d3fa36dbdf?access_key=PMAT-01HEV7YE7DCMATG81N9PE375VT)
