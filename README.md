@@ -102,7 +102,7 @@ Tambien debemos crear una base de datos. En el servidor creado debes hacer click
 
 **4. Modificar las variables de entorno**
 
-En el repositorio clonado anteriormente verás un archivo con nombre `.env.development` si existe debes crearlo, el mismo lo deberás modificar con los datos de tu base. La cual creamos en el paso anterior. Te dejamos un ejemplo de cómo se debería ver el archivo.
+En el repositorio clonado anteriormente verás un archivo con nombre `.env.development` si no existe debes crearlo, el mismo lo deberás modificar con los datos de tu base. La cual creamos en el paso anterior. Te dejamos un ejemplo de cómo se debería ver el archivo.
 
 ```
 SQL_USERNAME=postgres
