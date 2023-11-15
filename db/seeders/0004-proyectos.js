@@ -15,7 +15,8 @@ module.exports = {
     // seeders proyectos
     await queryInterface.bulkInsert('Proyectos', [
       {
-        titulo: 'Proyecto 1',
+        titulo:
+          'Plataforma abierta de gestion de camaras IP y aplicaciones moviles para la seguridad civil ciudadana',
         tipo: 'Investigación',
         organismo: 'UNLP',
         lineaFinanciamiento: 'UNLP',
@@ -36,7 +37,8 @@ module.exports = {
         idConvocatoria: 1,
       },
       {
-        titulo: 'Proyecto 2',
+        titulo:
+          'Desarrollo de software para la monitorización y control de la calidad del aire en tiempo real',
         tipo: 'Investigación 2',
         organismo: 'UNLP',
         lineaFinanciamiento: 'UNLP',
@@ -57,7 +59,8 @@ module.exports = {
         idConvocatoria: 2,
       },
       {
-        titulo: 'Proyecto 3',
+        titulo:
+          'Desarrollo de un software de gestión de recursos humanos para pequeñas y medianas empresas',
         tipo: 'Investigación 3',
         organismo: 'UNLP',
         lineaFinanciamiento: 'UNLP',
