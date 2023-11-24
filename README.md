@@ -127,8 +127,8 @@ PSe deberá abrir una terminal o usar la misma que en el punto anterior, lo que 
 Para ello hay que situarse en el proyecto y ejecutar el comando `npm start` para correr el proyecto localmente.El mismo quedará operativo en la url _“localhost:3001”_.
 Esto dejará en funcionamiento la base de datos mientras no se cierre la terminal, la cual responderá a las consultas del front-end.
 
-## Colección / Colleccion
+## Colección
 
 Se deja asentado un link con la colección y sus métodos funcionales en localhost, la misma fue generada y extraída en Postman que es la aplicación que nos permite testear APIs a través de una interfaz gráfica de usuario.
 
-[Colección / Colleccion](https://grupo4-unahur.postman.co/workspace/Subsidios~ca6cdd2f-a9dc-4aee-a453-e99991b1fca5/collection/23966358-8480fbe9-da46-4fb9-89ea-c9d3fa36dbdf?action=share&creator=20821660)
+[Colección](https://grupo4-unahur.postman.co/workspace/Subsidios~ca6cdd2f-a9dc-4aee-a453-e99991b1fca5/collection/23966358-8480fbe9-da46-4fb9-89ea-c9d3fa36dbdf?action=share&creator=20821660)
