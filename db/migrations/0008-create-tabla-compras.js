@@ -47,6 +47,9 @@ module.exports = {
       subRubro: {
         type: Sequelize.STRING,
       },
+      proveedorNota: {
+        type: Sequelize.STRING,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
